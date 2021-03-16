@@ -88,7 +88,7 @@ class Instagram:
                 self.followings.append(a)
                 f.writeline(a)
 
-    def findSonOfBitches(self):
+    def find(self):
         for following in self.followings:
             if following not in self.followers:
                 print(following)
@@ -98,5 +98,5 @@ instagram = Instagram(username, password)
 instagram.signIn()
 instagram.getFollewers()
 instagram.getFollowings()
-instagram.findSonOfBitches()
+instagram.find()
 
